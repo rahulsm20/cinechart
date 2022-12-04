@@ -1,4 +1,4 @@
-# Cinechart
+# Cinechart :movie_camera:
 #### Frontend
   * ReactJS
 #### Backend
