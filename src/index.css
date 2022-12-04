@@ -1,0 +1,9 @@
+/* body{
+  position: absolute;
+  width: 1336px;
+  height: 768px;
+  background: radial-gradient(95.26% 95.26% at 50% 38.53%, #4B6CB7 0%, #391848 82.81%);
+} */
+body{
+  background: radial-gradient(95.26% 95.26% at 50% 38.53%, #4B6CB7 0%, #391848 82.81%);
+}
