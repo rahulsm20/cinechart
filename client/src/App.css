@@ -1,4 +1,13 @@
-nav{
+@media screen and (max-width:768px) {
+  .card{
+    width:70%;
+    margin-left:0%;
+  }
+  .input-group{
+    width: 20em;
+  }
+}  
+  nav{
   position: relative;
   margin-top: 0px;
   width: 100%;
@@ -13,8 +22,9 @@ ul{
 }
 
 #search{
-  border-radius: 0.5em;
+  border-radius: 0.8em;
   border: none;
+  float: right;
 }
 
 img{
@@ -24,6 +34,7 @@ border-radius: 1em;
 .card{
   border-radius: 1.5em;
   border: none;
+  background:none;
 }
 
 .popular{
@@ -32,7 +43,6 @@ border-radius: 1em;
 
 #login-form{
   background: none;
-  margin-left: 29%;
 }
 hr{
   color: aliceblue;
@@ -49,4 +59,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .login-button{
   font-size: 1em;
+}
+
+.profPic{
+  border-radius: 3em;
+  background-color: #FFEFD6;
 }
