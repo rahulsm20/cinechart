@@ -4,3 +4,5 @@
 #### Backend
   * Node.js
   * ExpressJS
+#### Database 
+  * MongoDB
