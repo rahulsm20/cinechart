@@ -14,17 +14,27 @@
 }
 #logo{
   font-size: 2em;
-  font-family: 'Inika',sans-serif;
-  font-weight: 700;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 100;
 }
-ul{
-  list-style: none
+ul,a{
+  list-style: none;
+  text-decoration:none;
+}
+button{
+  color: #FFEFD6;
+  background-color: rgb(20, 14, 63);
+  border: transparent;
+  border-radius: 0.5em;
 }
 
 #search{
   border-radius: 0.8em;
-  border: none;
+  border:rgba(26, 11, 231, 0.25) 3px solid;
+  box-shadow:#FFEFD6;
   float: right;
+  color:white;
+  background-color: transparent;
 }
 
 img{

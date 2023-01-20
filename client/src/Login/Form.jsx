@@ -1,12 +1,24 @@
-import React, { useState } from "react";
-
+import React, { useState,useEffect} from "react";
+import {useNavigate} from 'react-router-dom'
 const Form = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate=useNavigate()
   const handleForm = event => {
-    console.log("Form submitted");
+    // if(username=='username'&& password=='password345')
+    // localStorage.setItem('Username',JSON.stringify(username))
+    // localStorage.setItem('Password',JSON.stringify(password))
+    navigate('/home')
+    console.log('Login successful')
     event.preventDefault();
   };
+  useEffect(() => {
+    localStorage.setItem('Username',username)
+    localStorage.setItem('Password',password)
+    console.log(localStorage)
+    // localStorage.clear()
+  },[username,password]);
+  
   return (
     <div
       id="login-form"
