@@ -2,8 +2,9 @@ const express = require("express");
 const app = express();
 const cors = require('cors')
 const connectDB = require('./db/connect')
-const movieSearch = require('./routes/movies');
-const searchByName = require("./routes/search");
+const movieSearch = require('./controllers/movies');
+const searchByName = require("./controllers/search");
+const add = require("./routes/add");
 require('dotenv').config()
 app.use(cors());
 app.use(express.json())
@@ -21,4 +22,5 @@ const start = async() =>{
 start()
 
 app.use('/movies',movieSearch)
+app.use('/add',add)
 app.use('/:name',searchByName)
