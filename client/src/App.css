@@ -27,6 +27,11 @@ button{
   border: transparent;
   border-radius: 0.5em;
 }
+body{
+  font-family: 'Inter';
+ background-image: url('/public/LoginPage.jpg');
+
+}   
 
 #search{
   border-radius: 0.8em;
