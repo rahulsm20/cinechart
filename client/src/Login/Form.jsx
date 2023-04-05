@@ -22,7 +22,7 @@ const Form = () => {
   return (
     <div
       id="login-form"
-      className="card col-5 py-5 h-100 d-flex align-items-center justify-content-center text-white form-control"
+      className="card col-lg-5 d-flex align-items-center justify-content-center text-white form-control"
     >
       <form onSubmit={handleForm}>
         <h4 className="text-white">Login to your account</h4>

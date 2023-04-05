@@ -35,7 +35,7 @@ const Home = () => {
       <nav className="navbar nav-expand-lg bg-black">
         <ul className="navbar-nav me-auto flex-row">
           <li className="nav-item p-2 text-white" id="logo">
-            <a href='/'>
+            <a href='/' className="text-white">
             <img src='/public/large_cinechart_0.png' className="col-2 p-1"/>
             cinechart
           </a>

@@ -11,8 +11,13 @@ const Movie = () => {
       .then((response) => setFilm(response.data[0]))
       .catch((error) => console.log(error));
   }, []);
-  const handleSubmit = () =>{
-    navigate('/watch-list')
+  const handleSubmit = (moviename,image,director) =>{
+    axios.post(`http://localhost:5000/add/${moviename}`,{
+      image:image,
+      director:director
+    })
+    .then((res)=>alert(moviename+' added to watchlist'))
+    .catch((err)=>alert(moviename + ' already in watchlist'))
     console.log("Movie Added")
   }
   return (
@@ -43,7 +48,7 @@ const Movie = () => {
               src="https://download.logo.wine/logo/Amazon_Prime/Amazon_Prime-Logo.wine.png"
               />
               </a>
-          <button className="btn bg-warning" type="submit" onClick={handleSubmit}>
+          <button className="btn bg-warning" type="submit" onClick={()=>handleSubmit(film.name,film.image,film.director)}>
             Add to watch list &nbsp;<i className="bi bi-plus-lg"></i>
           </button>
         </div>
