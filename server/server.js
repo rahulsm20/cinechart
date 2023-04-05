@@ -11,6 +11,12 @@ app.use(cors());
 app.use(express.json())
 
 
+app.use('/movies',movieSearch)
+app.use('/watchlist',getWatchlist)
+app.use('/add',add)
+app.use('/:name',searchByName)
+app.use('/',(req,res)=>res.json('cinechart api'))
+
 const start = async() =>{
     try{
         await connectDB(process.env.MONGO_URL)
@@ -21,8 +27,3 @@ const start = async() =>{
     }
 }
 start()
-app.use('/movies',movieSearch)
-app.use('/watchlist',getWatchlist)
-app.use('/add',add)
-app.use('/:name',searchByName)
-app.use('/',(req,res)=>res.json('cinechart api'))
